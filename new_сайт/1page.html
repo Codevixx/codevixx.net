@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Привет!</title>
+    <link rel="stylesheet" href="1page.css">
+</head>
+<body>
+    
+    <div class="header">
+   
+        <div class="header-buttons">
+            <button onclick="scrollToContacts()">Контакты</button>
+            <button onclick="scrollToPortfolio()">Портфолио</button>
+       
+            <button onclick="location.href='4page/4page.html'">поддержка автора</button>
+
+            <button onclick="location.href='3page/3page.html'">info</button>
+
+        
+            <button onclick="location.href='2page/2page.html'">Download</button>
+
+        </div>
+    </div>
+
+   
+
+    <!-- Параллакс секция -->
+    <div class="parallax"></div>
+
+    <div class="content">
+        <h1>Наше портфолио</h1>
+        <div class="portfolio" id="portfolio">
+            <h2>Портфолио</h2>
+            <div class="portfolio-top">
+                <div class="portfolio-item">
+                    <h3>Проект 1</h3>
+                    <img src="photo/photo1.jpg" alt="Проект 1">
+                </div>
+                <div class="portfolio-item">
+                    <h3>Проект 2</h3>
+                    <img src="photo/photo2.jpg" alt="Проект 2">
+                </div>
+                <div class="portfolio-item">
+                    <h3>Проект 3</h3>
+                    <img src="photo/photo3.jpg" alt="Проект 3">
+                </div>
+            </div>
+            <div class="portfolio-bottom">
+                <div class="portfolio-item2">
+                    <h3>Проект 4</h3>
+                    <img src="photo/photo4.jpg" alt="Проект 4">
+                </div>
+                <div class="portfolio-item2">
+                    <h3>Проект 5</h3>
+                    <img src="photo/photo5.jpg" alt="Проект 5">
+                </div>
+                <div class="portfolio-item2">
+                    <h3>Проект 6</h3>
+                    <img src="photo/photo6.jpg" alt="Проект 6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section" id="contacts">
+        <h2>Контактная информация</h2>
+        <p>Email: lampamjn@gmail.com</p>
+        <p>Телефон: +093 242 67 62</p>
+    </div>
+
+    <script>
+        function scrollToContacts() {
+            document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+        }
+        function scrollToPortfolio() {
+    document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+}
+
+    </script>
+</body>
+</html>
